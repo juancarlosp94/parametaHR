@@ -1,5 +1,5 @@
 > [!IMPORTANT]  
-> El proyecto falla en configurar adecuadamente el servicio SOAP para gestionar la persistancia de los datos de los empleados. El proyecto tuvo un enfoque Java a XML y no al revés como es generalmente recomendado. Próximas actuializaciones se haran para hacer un enfoque XML a Java. Para mejorar las buenas prácticas se debe agregar seguridad, tests y conterización para minimizar problemas de dependencia.
+> Próximas actuializaciones se haran para hacer un enfoque XML a Java. Para mejorar las buenas prácticas se debe agregar seguridad, tests y conterización para minimizar problemas de dependencia.
 
 # Empleado API
 Este proyecto es una aplicación Spring Boot que permite recibir solicitudes POST para crear un empleado y almacenar los datos en una base de datos MySQL a traves de un servicio web SOAP que se encarga de gestionar la lógica de negocio relacionada con el empleado.

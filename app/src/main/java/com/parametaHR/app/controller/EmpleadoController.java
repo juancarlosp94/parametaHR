@@ -15,6 +15,6 @@ public class EmpleadoController {
 
     @PostMapping
     public EmpleadoResponseDTO crearEmpleado(@RequestBody EmpleadoRequestDTO empleadoRequest) {
-        return empleadoService.calcularDatosEmpleado(empleadoRequest);
+        return empleadoService.validarDatosEmpleado(empleadoRequest);
     }
 }

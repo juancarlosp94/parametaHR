@@ -1,10 +1,25 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://parametaHR.com/empleado"
-           xmlns:tns="http://parametaHR.com/empleado"
+           xmlns:tns="http://spring.io/parametahr.com/empleado"
+           targetNamespace="http://spring.io/parametahr.com/empleado"
            elementFormDefault="qualified">
 
-    <xs:element name="EmpleadoRequest">
+    <xs:element name="getEmpleadoRequest">
         <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombres" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getEmpleadoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombres" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+        <xs:complexType name="EmpleadoRequest">
             <xs:sequence>
                 <xs:element name="nombres" type="xs:string"/>
                 <xs:element name="apellidos" type="xs:string"/>
@@ -16,7 +31,6 @@
                 <xs:element name="salario" type="xs:double"/>
             </xs:sequence>
         </xs:complexType>
-    </xs:element>
 
     <xs:element name="EmpleadoResponse">
         <xs:complexType>

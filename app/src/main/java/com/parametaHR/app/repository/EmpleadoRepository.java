@@ -1,5 +1,6 @@
 package com.parametaHR.app.repository;
 
+import com.parametaHR.app.dto.EmpleadoRequestDTO;
 import com.parametaHR.app.entity.EmpleadoEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

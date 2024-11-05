@@ -1,10 +1,8 @@
 package com.parametaHR.app.dto;
 
+import jakarta.persistence.Entity;
 import jakarta.xml.bind.annotation.XmlRootElement;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
@@ -12,6 +10,8 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 @XmlRootElement(name = "EmpleadoRequest")
 public class EmpleadoRequestDTO {
     private String nombres;
